@@ -1,7 +1,7 @@
 # Diagramas de Arquitetura AWS – Módulo 2
 
 ## Diagrama 1 – EC2 + EBS
-![Diagrama 1](./images/Diagramas-D1.drawio.png)
+![Diagrama 1](images/Diagramas-D1.drawio.png)
 
 **Síntese:**  
 Uma instância **EC2** roda a aplicação e está conectada a um volume **EBS**, que mantém os dados mesmo que a máquina seja desligada.
@@ -13,7 +13,7 @@ O WordPress roda no EC2, enquanto o EBS guarda banco de dados, arquivos e sistem
 ---
 
 ## Diagrama 2 – EC2 + EBS + S3
-![Diagrama 2](./images/Diagramas-D2.drawio.png)
+![Diagrama 2](images/Diagramas-D2.drawio.png)
 
 **Síntese:**  
 O **EC2** roda o site. O **EBS** guarda os dados internos (banco e sistema). O **S3** armazena arquivos enviados pelos usuários, como imagens e documentos.
@@ -25,7 +25,7 @@ O EBS armazena dados críticos da loja e o S3 recebe imagens enviadas pelos vend
 ---
 
 ## 🔹 Diagrama 3 – Automação com Lambda
-![Diagrama 3](./images/Diagramas-D3.drawio.png)
+![Diagrama 3](images/Diagramas-D3.drawio.png)
 
 **Síntese:**  
 O **S3** recebe arquivos. Sempre que um novo upload acontece, dispara uma função **Lambda**, que processa o arquivo sem precisar de servidor dedicado.
@@ -38,7 +38,7 @@ A Lambda é acionada automaticamente e cria uma miniatura para o catálogo, deix
 ---
 
 ## Diagrama 4 – Auto Scaling com várias instâncias EC2
-![Diagrama 4](./images/Diagramas-D4.drawio.png)
+![Diagrama 4](images/Diagramas-D4.drawio.png)
 
 **Síntese:**  
 Várias instâncias **EC2** são criadas automaticamente (auto scaling).  
