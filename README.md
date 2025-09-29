@@ -21,8 +21,6 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 ├── /notes      → Anotações de aulas e laboratórios em Markdown (.md)
 
-└── /images     → Prints de tela, diagramas e recursos visuais
-
 ---
 
 ## 🗂️ Estrutura dos Módulos e Progresso
