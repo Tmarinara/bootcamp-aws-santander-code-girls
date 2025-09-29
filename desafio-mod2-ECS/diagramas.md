@@ -1,7 +1,6 @@
 # Diagramas de Arquitetura AWS – Módulo 2
 
 ## Diagrama 1 – EC2 + EBS
-![Diagrama 1](images/Diagramas-D1.drawio.png)
 <img width="2285" height="1490" alt="Diagramas-D1 drawio" src="https://github.com/user-attachments/assets/c35d86aa-181c-4f7f-8f64-a33bfaae5e84" />
 
 **Síntese:**  
