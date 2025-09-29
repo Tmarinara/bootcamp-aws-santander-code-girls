@@ -7,7 +7,7 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 ## 🎯 Objetivos
 - Consolidar o conhecimento adquirido em aulas e laboratórios.  
-- Praticar o gerenciamento de instâncias EC2 e outros serviços AWS.  
+- Praticar serviços AWS.  
 - Documentar processos técnicos com clareza e estrutura.  
 - Utilizar o GitHub como ferramenta de versionamento e compartilhamento técnico.  
 
@@ -15,18 +15,25 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 ## 📂 Estrutura do Repositório
 
-/ (raiz)
+- **/desafio-mod2-ECS** → Contém os arquivos do desafio do módulo 2 (Gerenciamento de Instâncias EC2).  
+  - `README.md`: descrição do desafio e anotações.  
+  - `diagramas.md`: Diagramas e explicações desses.  
 
-├── README.md   → Este arquivo
+- **/images** → Pasta onde serão inseridas as imagens necessárias para compor esse repositório de estudos.  
 
-├── /notes      → Anotações de aulas e laboratórios em Markdown (.md)
+- **/notes** → Anotações gerais de cada aula.  
+
+- **LICENSE** → Licença do repositório.  
+
+- **README.md** → Este arquivo principal.
+
 
 ---
 
 ## 🗂️ Estrutura dos Módulos e Progresso
 
-- [ ] 1. **Introdução à AWS e Conceitos Básicos**  
-- [ ] 2. **Computação na Nuvem com EC2**  
+- [x] 1. **Introdução à AWS e Conceitos Básicos**  
+- [x] 2. **Computação na Nuvem com EC2**  
 - [ ] 3. **Criando Recursos na AWS**  
 - [ ] 4. **Redes na AWS**  
 - [ ] 5. **Banco de Dados na AWS**  
@@ -41,4 +48,4 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 ## 📌 Observações
 
-Este repositório é de caráter **educacional**, criado para estudos e prática.  
+Este repositório é de caráter educacional, criado para estudos e prática.  
