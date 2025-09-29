@@ -23,14 +23,18 @@ O objetivo é consolidar os conhecimentos em **gerenciamento de instâncias EC2*
 ---
 
 ## Anotações relevantes
--  **O que são** EC2, EBS, S3 e Lambda
-  -- **EC2 (Elastic Compute Cloud)** → serviço de máquinas virtuais na nuvem. É como se fosse o “computador” onde você instala sistema operacional e roda suas aplicações.
-  -- **EBS (Elastic Block Store)** → serviço de armazenamento em blocos. É o “HD/SSD” persistente que você conecta ao seu EC2 para que os dados não se percam ao desligar a instância.
-  -- **S3 (Simple Storage Service)** → serviço de armazenamento de objetos. Ótimo para guardar arquivos como fotos, PDFs, backups, vídeos. Não é um disco de sistema, é um “balde (bucket)” na nuvem.
-  -- **Lambda** → serviço serverless. Você escreve funções que rodam sem precisar criar/gerenciar servidores. O código é executado “sob demanda”, por exemplo, quando um arquivo chega no S3.
+### **O que são** EC2, EBS, S3 e Lambda
+
+|              TIPO               |                                                                               FUNCIONALIDADE                                                                                 |
+| :------------------------------:  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **EC2 <br><sub>Elastic Compute Cloud</sub></br>** | Serviço de máquinas virtuais na nuvem. <br>É como se fosse o “computador” onde você instala sistema operacional e roda suas aplicações.</br>                                          |
+| **EBS <br><sub>Elastic Block Store</sub></br>**   | Serviço de armazenamento em blocos. <br>É o “HD/SSD” persistente que você conecta ao seu EC2 para que os dados não se percam ao desligar a instância.</br>                        |
+| **S3 <br><sub>Simple Storage Service</sub></br>** | Serviço de armazenamento de objetos. <br>Ótimo para guardar arquivos como fotos, PDFs, backups, vídeos. Não é um disco de sistema, é um “balde (bucket)” na nuvem.</br>               |
+| **Lambda**                      | Serviço serverless. <br>Você escreve funções que rodam sem precisar criar/gerenciar servidores. O código é executado “sob demanda”, por exemplo, quando um arquivo chega no S3.</br>  |
+
                                          
-- **Como se relacionam normalmente**
-  -- O **EC2** é a base → hospeda sistemas, aplicações e bancos.
-  -- O **EBS** dá persistência ao EC2 → sem ele, os dados se perdem ao desligar a máquina.
-  -- O **S3** complementa → usado para guardar arquivos de longo prazo, estáticos ou grandes volumes.
-  -- O **Lambda** entra como automação → integra S3 e EC2. Exemplo: ao subir uma foto no S3, uma função Lambda pode processar essa foto e salvar resultado em outro bucket.
+### **Como se relacionam normalmente**
+-  O **EC2** é a base → hospeda sistemas, aplicações e bancos.
+-  O **EBS** dá persistência ao EC2 → sem ele, os dados se perdem ao desligar a máquina.
+- O **S3** complementa → usado para guardar arquivos de longo prazo, estáticos ou grandes volumes.
+- O **Lambda** entra como automação → integra S3 e EC2. Exemplo: ao subir uma foto no S3, uma função Lambda pode processar essa foto e salvar resultado em outro bucket.
