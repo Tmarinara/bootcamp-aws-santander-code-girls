@@ -33,8 +33,8 @@ O objetivo é consolidar os conhecimentos em **gerenciamento de instâncias EC2*
 | **Lambda**                      | Serviço serverless. <br>Você escreve funções que rodam sem precisar criar/gerenciar servidores. O código é executado “sob demanda”, por exemplo, quando um arquivo chega no S3.</br>  |
 
                                          
-### **Como se relacionam normalmente**
--  O **EC2** é a base → hospeda sistemas, aplicações e bancos.
--  O **EBS** dá persistência ao EC2 → sem ele, os dados se perdem ao desligar a máquina.
-- O **S3** complementa → usado para guardar arquivos de longo prazo, estáticos ou grandes volumes.
-- O **Lambda** entra como automação → integra S3 e EC2. Exemplo: ao subir uma foto no S3, uma função Lambda pode processar essa foto e salvar resultado em outro bucket.
+- **Como se relacionam normalmente**
+  -  O **EC2** é a base → hospeda sistemas, aplicações e bancos.
+  -  O **EBS** dá persistência ao EC2 → sem ele, os dados se perdem ao desligar a máquina.
+  - O **S3** complementa → usado para guardar arquivos de longo prazo, estáticos ou grandes volumes.
+  - O **Lambda** entra como automação → integra S3 e EC2. Exemplo: ao subir uma foto no S3, uma função Lambda pode processar essa foto e salvar resultado em outro bucket.
