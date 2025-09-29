@@ -37,17 +37,3 @@ A Lambda é acionada automaticamente e cria uma miniatura para o catálogo, deix
 
 ---
 
-## Diagrama 4 – Auto Scaling com várias instâncias EC2
-<img width="3063" height="2438" alt="Diagramas-D4 drawio" src="https://github.com/user-attachments/assets/aeb3b298-a4b4-409b-8e50-8bca5c7bd5aa" />
-
-**Síntese:**  
-Várias instâncias **EC2** são criadas automaticamente (auto scaling).  
-Cada instância tem seu próprio **EBS**, mas todas compartilham o mesmo **S3**, que centraliza os arquivos.
-
-**Caso aplicado – Plataforma de Streaming**  
-Um serviço de vídeos precisa atender milhares de usuários.  
-O auto scaling cria várias instâncias EC2 conforme a demanda aumenta.  
-Os vídeos ficam no S3, acessíveis por todas as instâncias, garantindo escalabilidade e eficiência no uso dos recursos.
-
----
-
