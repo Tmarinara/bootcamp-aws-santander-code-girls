@@ -16,8 +16,11 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 ## 📂 Estrutura do Repositório
 
 / (raiz)
+
 ├── README.md   → Este arquivo
+
 ├── /notes      → Anotações de aulas e laboratórios em Markdown (.md)
+
 └── /images     → Prints de tela, diagramas e recursos visuais
 
 ---
