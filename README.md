@@ -27,7 +27,6 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 - **README.md** → Este arquivo principal.
 
-
 ---
 
 ## 🗂️ Estrutura dos Módulos e Progresso

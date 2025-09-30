@@ -14,7 +14,7 @@
 - Diferente dos data centers tradicionais, o modelo é baseado em OPEX (pagar pelo uso), não em CAPEX (investimento inicial pesado em infraestrutura física).
 - Características:
   - Pagamento conforme uso (Pay as you go).
-  - 	Variedade enorme de serviços: computação, bancos de dados, machine learning, IoT etc.
+  - Variedade enorme de serviços: computação, bancos de dados, machine learning, IoT etc.
 
 ### 1.1.4.	Modelos de Serviço na Nuvem
 - IaaS (Infrastructure as a Service): infraestrutura (máquinas virtuais, redes).  
@@ -102,5 +102,3 @@
      - AWS CloudFormation: cria recursos a partir de modelos em YAML/JSON.
      - Terraform (HashiCorp): ferramenta externa muito usada para automação multi-cloud.
    - É a forma mais profissional e escalável, usada em grandes projetos.
-
-
