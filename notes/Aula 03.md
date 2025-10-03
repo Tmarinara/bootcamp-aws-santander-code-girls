@@ -39,8 +39,32 @@
   - Depois, abre-se o Remote Desktop no PC local, insere-se o IP público da instância e a senha de administrador gerada.
   - Pronto: você controla a instância Windows na nuvem como se fosse um PC normal.
   
-## 3.2.  
-- 
+## 3.2. Criando o nosso Amazon S3
+### 3.2.1 Planejando nosso Amazon S3  
+- Antes de criar um bucket, é preciso planejar qual será o objetivo (armazenar imagens, hospedar site, guardar backups etc.).  
+- Escolher a região AWS próxima dos usuários para reduzir a latência.  
+- Definir se o bucket será público ou privado. Por padrão, os buckets são privados.  
+- Pensar na estrutura de pastas/objetos: cada arquivo dentro do bucket é chamado de objeto, identificado por uma chave (key).  
+
+### 3.2.2 Criando o nosso Amazon S3  
+- Criar um bucket no AWS Management Console:  
+- Acessar o serviço S3.  
+- Escolher o nome único global do bucket.  
+- Selecionar a região de armazenamento.  
+- Configurar permissões (público/privado).  
+- Definir regras adicionais, como versionamento e criptografia.  
+- É possível também criar via CLI (Command Line Interface) ou SDKs, mas aqui o foco é via console.  
+
+### 3.2.3 Explicando o exercício prático  
+- O exercício consiste em criar um bucket no S3, enviar arquivos e configurar o acesso.  
+- É possível usar ferramentas como Git Bash ou o próprio console para manipular arquivos.  
+- Em alguns casos, o S3 pode ser configurado para hospedar sites estáticos (HTML, CSS, JS).  
+- Passos resumidos:  
+  - Criar o bucket.  
+  - Subir arquivos (upload).  
+  - Definir permissões de acesso.  
+  - (Opcional) Ativar hospedagem estática.  
+
 ## 3.3. 
 
 
