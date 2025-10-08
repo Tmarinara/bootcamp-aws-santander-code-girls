@@ -26,7 +26,7 @@ O objetivo é consolidar os conhecimentos em **gerenciamento de instâncias EC2*
 ### **O que são** EC2, EBS, S3 e Lambda
 
 |              TIPO               |                                                                               FUNCIONALIDADE                                                                                 |
-| :------------------------------:  | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :----:  | :---- |
 | **EC2 <br><sub>Elastic Compute Cloud</sub></br>** | Serviço de máquinas virtuais na nuvem. <br>É como se fosse o “computador” onde você instala sistema operacional e roda suas aplicações.</br>                                          |
 | **EBS <br><sub>Elastic Block Store</sub></br>**   | Serviço de armazenamento em blocos. <br>É o “HD/SSD” persistente que você conecta ao seu EC2 para que os dados não se percam ao desligar a instância.</br>                        |
 | **S3 <br><sub>Simple Storage Service</sub></br>** | Serviço de armazenamento de objetos. <br>Ótimo para guardar arquivos como fotos, PDFs, backups, vídeos. Não é um disco de sistema, é um “balde (bucket)” na nuvem.</br>               |

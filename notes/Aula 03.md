@@ -65,7 +65,39 @@
   - Definir permissões de acesso.  
   - (Opcional) Ativar hospedagem estática.  
 
-## 3.3. 
+## 3.3 Criando o nosso Amazon Lambda Function
+
+### 3.3.1 Explicando o que é Serverless
+- O conceito Serverless (sem servidor) não significa que não existam servidores, mas que não precisamos gerenciá-los diretamente.  
+- A infraestrutura é completamente administrada pela AWS — você apenas escreve o código, e o serviço executa automaticamente conforme a demanda.  
+- Com Serverless, o foco do desenvolvedor passa a ser a lógica/código da aplicação, não o gerenciamento de servidores, escalabilidade ou manutenção.  
+- A AWS se encarrega da infraestrutura — escalabilidade, disponibilidade e manutenção — permitindo que o desenvolvedor foque apenas no código da aplicação.  
+- Esse modelo é ideal para execuções rápidas e sob demanda, como:
+ - Processamento de eventos (ex: upload de arquivo no S3).  
+ - Execução de funções pontuais (como o cálculo de um relatório).  
+ - Integrações automáticas entre serviços da AWS.  
+- O AWS Lambda foi o primeiro serviço popular a adotar essa abordagem, e hoje o conceito é usado em vários outros produtos da AWS, como API Gateway, Step Functions e DynamoDB Streams.  
+
+### 3.3.2 Diferença entre EC2 e Lambda Function  
+
+|  **Característica**  |  **Amazon EC2**  |  **AWS Lambda**  |
+| :----: | :----: | :----: |
+|  **Modelo de uso**  | Máquina virtual (você gerencia o servidor)   | Execução de código sob demanda (sem gerenciar servidor)   |
+|  **Escalabilidade**  | Manual ou automática via Auto Scaling   | Totalmente automática, conforme as requisições  |
+|  **Custo**  | Paga pelo tempo em que a instância fica ligada   | Paga apenas pelo tempo de execução do código (milissegundos)   |
+|  **Configuração**  | Precisa definir SO, rede, segurança, etc   | Apenas envia o código e define os gatilhos de execução   |
+|  **Uso comum**  | Aplicações web completas, bancos, sistemas de backend   | Funções pequenas, automações, processamento de eventos   |  
+
+- Resumo:
+ - O EC2 oferece controle total, mas exige manutenção constante.
+ - O Lambda automatiza a execução e escala automaticamente, sem necessidade de gerenciar servidores.
+
+
+### 3.3.3 Criando um Hello World com Lambda
+
+
+## 3.4 Desafios de Código - Aperfeiçoe Sua Lógica e Pensamento Computacional
+- Explicação e desafio
 
 
 
