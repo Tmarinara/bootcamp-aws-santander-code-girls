@@ -33,8 +33,8 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 
 - [x] 1. **Introdução à AWS e Conceitos Básicos**  
 - [x] 2. **Computação na Nuvem com EC2**  
-- [ ] 3. **Criando Recursos na AWS**  
-- [ ] 4. **Redes na AWS**  
+- [X] 3. **Criando Recursos na AWS**  
+- [X] 4. **Redes na AWS**  
 - [ ] 5. **Banco de Dados na AWS**  
 - [ ] 6. **Serviços de Armazenamento e CDN**  
 - [ ] 7. **Serviços Intermediários e Avançados**  
@@ -48,7 +48,6 @@ O objetivo é documentar, de forma organizada, os aprendizados sobre **AWS (Amaz
 >[!NOTE]  
 > Este repositório é de caráter educacional, criado para estudos e prática.  
 > Os resumos em **/notes** foram baseados em slides, aulas e vídeos de apoio. Sempre busquei reescrever com a minha  interpretação, mas pode haver trechos semelhantes ao material original.  
-> *Caso algum autor identifique necessidade de ajuste, pode solicitar a referência ou remoção.*  
 
 - Lembrete pessoal: No momento do estudo consultar os slides disponibilizados pelo professor para cada módulo.
 

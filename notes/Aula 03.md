@@ -88,13 +88,28 @@
 |  **Configuração**  | Precisa definir SO, rede, segurança, etc   | Apenas envia o código e define os gatilhos de execução   |
 |  **Uso comum**  | Aplicações web completas, bancos, sistemas de backend   | Funções pequenas, automações, processamento de eventos   |  
 
-- Resumo:
+#### Resumo:
  - O EC2 oferece controle total, mas exige manutenção constante.
  - O Lambda automatiza a execução e escala automaticamente, sem necessidade de gerenciar servidores.
 
 
 ### 3.3.3 Criando um Hello World com Lambda
-
+- Acesse o AWS Management Console e procure por Lambda.
+- Clique em “Criar função” e selecione “Author from scratch”.
+- Dê um nome à função (exemplo: hello-world-lambda).
+- Escolha a linguagem de execução (runtime), como Python 3.x ou Node.js.
+- Crie ou selecione um papel IAM com permissões básicas para Lambda.
+- No editor de código, insira a função simples de exemplo:
+```
+def lambda_handler(event, context):
+    return {
+        'statusCode': 200,
+        'body': 'Hello, World from AWS Lambda!'
+    }
+```
+- Clique em Deploy para salvar as alterações.
+- Em seguida, selecione Test, crie um evento fictício e execute-o.
+- Se tudo estiver correto, a resposta aparecerá com o código 200 e a mensagem "Hello, World from AWS Lambda!".
 
 ## 3.4 Desafios de Código - Aperfeiçoe Sua Lógica e Pensamento Computacional
 - Explicação e desafio
