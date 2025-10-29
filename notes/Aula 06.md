@@ -4,16 +4,14 @@
 
 ### O que é o Amazon S3  
 
-- O <ins>Amazon Simple Storage Service (S3)</ins> é um serviço de <ins>armazenamento de objetos em nuvem</ins> oferecido pela AWS.  
-- Ele permite <ins>armazenar, organizar e recuperar</ins> grandes volumes de dados de forma <ins>segura, escalável e durável</ins>.  
-- Os dados são armazenados em **buckets**, que funcionam como contêineres — cada bucket possui um **nome globalmente único** e pode conter qualquer tipo de arquivo (imagens, logs, backups, vídeos etc.).  
+- O Amazon Simple Storage Service (S3) é um serviço de armazenamento de objetos em nuvem oferecido pela AWS.  
+- Ele permite armazenar, organizar e recuperar grandes volumes de dados de forma segura, escalável e durável.  
+- Os dados são armazenados em <ins>buckets</ins>, que funcionam como contêineres — cada bucket possui um nome globalmente único e pode conter qualquer tipo de arquivo (imagens, logs, backups, vídeos etc.).  
 - O S3 é amplamente utilizado para:
   - Hospedagem de sites estáticos,  
   - Armazenamento de backups e logs,  
   - Integração com aplicações que precisam de armazenamento de alta disponibilidade,  
-  - Entrega de conteúdo via **Amazon CloudFront**.  
-
----
+  - Entrega de conteúdo via Amazon CloudFront.  
 
 ### Características principais  
 
@@ -21,11 +19,9 @@
 - **Durabilidade:** Projetado para 99,999999999% (11 noves) de durabilidade.  
 - **Disponibilidade:** 99,99% de disponibilidade anual.  
 - **Segurança:**  
-  - Criptografia de dados **em repouso** (SSE-S3, SSE-KMS, SSE-C) e **em trânsito (HTTPS/TLS)**.  
-  - Controle de acesso granular via **IAM Policies** e **Bucket Policies**.  
+  - Criptografia de dados em repouso (SSE-S3, SSE-KMS, SSE-C) e em trânsito (HTTPS/TLS).  
+  - Controle de acesso granular via IAM Policies e Bucket Policies.  
 - **Escalabilidade automática:** Nenhum gerenciamento manual é necessário; o S3 cresce automaticamente conforme a demanda.  
-
----
 
 ### Classes de armazenamento  
 
@@ -36,14 +32,12 @@
 | **S3 Intelligent-Tiering** | Movimenta automaticamente entre classes conforme uso | Dados com padrão de acesso variável |
 | **S3 Glacier / Glacier Deep Archive** | Armazenamento de longo prazo e baixo custo | Arquivamento e retenção de longo prazo |
 
-> ⚙️ As classes de armazenamento ajudam a **otimizar custos** com base na frequência de acesso aos dados.
-
----
+**Obs:** As classes de armazenamento ajudam a otimizar custos com base na frequência de acesso aos dados.
 
 ### Políticas de Acesso no S3  
 
-- Com **políticas de bucket (Bucket Policies)**, é possível **controlar quem pode acessar os dados** e **quais ações** podem ser executadas.  
-- Essas políticas são escritas em **JSON**, usando o formato padrão da AWS Identity and Access Management (IAM).  
+- Com políticas de bucket (Bucket Policies), é possível controlar quem pode acessar os dados e quais ações podem ser executadas.  
+- Essas políticas são escritas em JSON, usando o formato padrão da AWS Identity and Access Management (IAM).  
 
 #### Exemplo – Tornar bucket público
 ```json
@@ -156,3 +150,36 @@ Esses pontos de presença são responsáveis por **entregar o conteúdo a partir
 
 ### 6.4. Associando Conceitos de Serviços de Armazenamento e CDN  
  - Exercício  
+
+ ---
+
+### 🔧 Políticas e Configurações Importantes nos Serviços de Armazenamento e CDN da AWS
+
+#### **Lifecycle Policy (Política de Ciclo de Vida)**
+- Define **regras automáticas** para **mover, arquivar ou excluir objetos** armazenados no Amazon S3 conforme o tempo.
+- Exemplo: mover arquivos antigos para o **S3 Glacier** após 90 dias, reduzindo custos de armazenamento.
+- Ajuda a automatizar a **gestão do ciclo de vida dos dados**, evitando acúmulo desnecessário de arquivos.
+
+#### **Cross-Region Replication (CRR)**
+- Permite **replicar automaticamente objetos do S3** entre buckets em **diferentes regiões da AWS**.
+- Garante **alta disponibilidade** e **resiliência** dos dados, além de facilitar a conformidade com normas regionais.
+- É configurada no nível do bucket e pode incluir **filtragem por prefixos ou tags**.
+
+#### **Storage Class (Classe de Armazenamento)**
+- Define o **tipo de armazenamento** utilizado para cada objeto no S3, de acordo com a frequência de acesso e custo.
+- Exemplos:
+  - **S3 Standard** → alta disponibilidade e acesso frequente.  
+  - **S3 Standard-IA (Infrequent Access)** → menor custo para dados acessados esporadicamente.  
+  - **S3 Glacier / Glacier Deep Archive** → ideal para **arquivamento de longo prazo**.
+- Permite otimizar custos ao alinhar o tipo de armazenamento com o uso real dos dados.
+
+#### **Cache Behavior (Comportamento de Cache)**
+- Configuração usada no **Amazon CloudFront** para definir **como o conteúdo é armazenado, atualizado e entregue**.
+- Permite especificar regras por **padrões de URL, headers, cookies ou query strings**.
+- Influencia diretamente a **performance** do site ou aplicação ao determinar **quais arquivos são servidos a partir do cache** nos Edge Locations.
+
+---
+
+📘 **Resumo geral**
+Essas políticas e configurações permitem automatizar o gerenciamento de dados, **melhorar desempenho**, **reduzir custos** e **aumentar a resiliência** das aplicações na AWS.  
+Elas conectam o **Amazon S3**, **Glacier** e **CloudFront**, integrando estratégias de **armazenamento inteligente** e **entrega otimizada de conteúdo**.
